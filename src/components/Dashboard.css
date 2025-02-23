@@ -1,0 +1,102 @@
+/* Dashboard.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: url('Spiderman logo.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Container for the whole page */
+.container {
+  display: flex;
+  height: 100vh; /* Full height */
+}
+
+.sidebar {
+  width: 20%;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  transition: width 0.3s;
+  height: 100%; /* Full height for sidebar */
+  position: fixed; /* Fixed to the left side */
+  top: 0;
+  left: 0;
+}
+
+.sidebar h2 {
+  color: red;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 15px 0;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.sidebar ul li a:hover {
+  color: red;
+}
+
+.content {
+  width:80%;
+  margin-left: 280px; 
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 100%;
+}
+
+/* Card Layout */
+.cards {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.card {
+  background-color: rgba(255, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1;
+  margin: 0 10px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.charts {
+  margin-top: 20px;
+  color: red;
+}
+
+footer {
+  margin-top: 40px;
+  color: white;
+  font-size: 16px;
+}
+
+#transactionTable , #transactions{
+  padding: 10px;
+}
+
+::placeholder{
+  color:black;
+}
+
+#billsTable,#upcomingBills{
+  padding: 10px;
+}
